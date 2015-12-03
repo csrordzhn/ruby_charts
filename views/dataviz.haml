@@ -1,0 +1,8 @@
+%script{src: '//code.highcharts.com/highcharts.js', type: 'text/javascript'}
+%script{src: '/chartkick.js', type: 'text/javascript'}
+
+-# %script{src: '//www.google.com/jsapi', type: 'text/javascript'}
+
+%p BEGIN GRAPH
+= column_chart @country_data, library:{chartArea:{width:'50%'}}, id: 'country', height: '300px'
+%p END GRAPH

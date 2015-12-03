@@ -1,0 +1,7 @@
+script src: '//code.highcharts.com/highcharts.js', type: 'text/javascript'
+script src: '/chartkick.js', type: 'text/javascript'
+script src: '//www.google.com/jsapi'
+== javascript_include_tag '/chartkick.js', 'chartkick'
+
+p Ages
+== line_chart(@some_data)
